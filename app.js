@@ -120,12 +120,9 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
-// define the maxOfThree function
 function maxOfThree ( A, B, C) {
 
-
-//Math.max to find tghe largest of the three numbers
-	return Math.max (5, 10, 8);
+return Math.max (5, 10, 8);
 }
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
@@ -142,17 +139,13 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
-// define function called calculateTip
+
 function calculateTip (billAmount, tipPercentage) {
 
-    //calculate billAmount * tipPercentage /100
         return (billAmount * tipPercentage) / 100;
-    // 50*20/100 = 10
     }
     
-
 console.log('Exercise 7 Result:', calculateTip(50, 20));
-
 
 
 /*
@@ -169,22 +162,19 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-// define function name convertTemperature
+
 function convertTemperature (temperature , scale){
 	
 	if (scale ==='C'){
      return (Temperature * 9/5) + 32;
 }
-// 32*9/5= 57.6 +(32) = 89.6
+
 	else if (scale ==='F'){
 	return (Temperature - 32) * 5/9
 }
 }
-// 32 - 32 = 0 * 5/9 = 0
 
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
-
-
+console.log('Exercise 8 Result:', convertTemperature(32, "C"))
 /*
 Exercise 9: basicCalculator()
 
@@ -201,7 +191,6 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-//define function name basicCalculator
 function basicCalculator (num1, num2, operation) {
     if (operation === "add") {
         return (num1 + num2);
