@@ -121,8 +121,7 @@ Complete the exercise in the space below:
 */
 
 function maxOfThree ( A, B, C) {
-
-return Math.max (5, 10, 8);
+return maxOfThree (5, 10, 8);
 }
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
@@ -147,8 +146,6 @@ function calculateTip (billAmount, tipPercentage) {
     }
     
 console.log('Exercise 7 Result:', calculateTip(50, 20));
-
-
 /*
 Exercise 8: convertTemperature()
 
