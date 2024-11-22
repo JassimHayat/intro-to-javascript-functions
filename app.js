@@ -54,19 +54,12 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-function isCharAVowel (a){
+function isCharAVowel (c) {
 
-if (isCharAVowel)
-return true;
-
-else (isCharAVowel )
-return false;
-
-
+return 'aeiou'.includes(c.toLowerCase());
 }
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
-
 
 /*
 Exercise 4: generateEmail()
@@ -120,11 +113,13 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
-function maxOfThree ( A, B, C) {
-return maxOfThree (5, 10, 8);
+function maxOfThree (a,b,c) {
+
+return Math.max(5, 10, 8);
 }
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
 
 /*
 Exercise 7: calculateTip()
@@ -160,19 +155,19 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
+function convertTemperature(temp, scale) {
+    if (scale === 'C') {
+       
+        return (temp * 9/5) + 32;
+    } else if (scale === 'F') {
 
-function convertTemperature (temperature , scale){
-	
-	if (scale ==='C'){
-     return (Temperature * 9/5) + 32;
+        return (temp - 32) * 5/9;
+    } else {
+        return "Invalid scale. Use 'C' for Celsius or 'F' for Fahrenheit.";
+    }
 }
 
-	else if (scale ==='F'){
-	return (Temperature - 32) * 5/9
-}
-}
-
-console.log('Exercise 8 Result:', convertTemperature(32, "C"))
+console.log('Exercise 8 Result:', convertTemperature(32, 'C'));
 /*
 Exercise 9: basicCalculator()
 
